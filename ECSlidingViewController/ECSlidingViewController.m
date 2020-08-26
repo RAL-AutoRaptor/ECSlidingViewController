@@ -938,7 +938,7 @@
     return YES;
 }
 
-- (void)notifyWhenInteractionEndsUsingBlock:(void(^)(id<UIViewControllerTransitionCoordinatorContext>context))handler {
+- (void)notifyWhenInteractionChangesUsingBlock:(void (^)(id<UIViewControllerTransitionCoordinatorContext> _Nonnull))handler {
     self.coordinatorInteractionEnded = handler;
 }
 
